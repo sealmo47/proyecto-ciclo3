@@ -1,8 +1,10 @@
 package com.retoo3.proyectomoto.controller;
 
 
-import com.reto3.entities.Category;
-import com.reto3.service.CategoryService;
+
+
+import com.retoo3.proyectomoto.entities.Category;
+import com.retoo3.proyectomoto.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

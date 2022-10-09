@@ -1,7 +1,7 @@
 package com.retoo3.proyectomoto.service;
 
-import com.reto3.entities.Category;
-import com.reto3.repository.CategoryRepository;
+import com.retoo3.proyectomoto.entities.Category;
+import com.retoo3.proyectomoto.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class CategoryService1 {
+public class CategoryService {
 
     @Autowired
     private CategoryRepository categoryRepository;
