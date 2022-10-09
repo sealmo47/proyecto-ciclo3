@@ -40,7 +40,7 @@ public class Motorbike implements Serializable {
     @JsonIgnoreProperties("motorbike")
     private Category category;
     
-    @OneToMany(cascade = {CascadeType.PERSIST},mappedBy = "mortorbike")
+    @OneToMany(cascade = {CascadeType.PERSIST},mappedBy = "motorbike")
     @JsonIgnoreProperties("motorbike")
     private List<Message> messages;
     
