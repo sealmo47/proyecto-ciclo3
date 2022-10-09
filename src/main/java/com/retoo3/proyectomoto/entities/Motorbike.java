@@ -33,7 +33,7 @@ public class Motorbike implements Serializable {
     private Integer idMotorbike;
     private String name;
     private String brand;
-    @Column(name="'year'")
+    @Column(name = "'year'")
     private Integer year;
     private String description;
     

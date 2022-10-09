@@ -44,8 +44,8 @@ public class MotorbikeService {
                 if(p.getBrand()!=null){
                     q.get().setBrand(p.getBrand());
                 }
-                if(p.getYear()!=null){
-                    q.get().setYear(p.getYear());
+                if(p.getAnio()!=null){
+                    q.get().setAnio(p.getAnio());
                 }
                 if(p.getDescription()!=null){
                     q.get().setDescription(p.getDescription());
