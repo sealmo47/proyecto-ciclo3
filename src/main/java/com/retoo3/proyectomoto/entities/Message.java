@@ -54,13 +54,6 @@ public class Message implements Serializable {
         this.messageText = messageText;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     public Client getClient() {
         return client;
