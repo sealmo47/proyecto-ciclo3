@@ -41,9 +41,6 @@ public class MessageService {
                 if(p.getMessageText()!=null){
                     q.get().setMessageText(p.getMessageText());
                 }
-                if(p.getDescription()!=null){
-                    q.get().setDescription(p.getDescription());
-                }
                 if(p.getClient()!=null){
                     q.get().setClient(p.getClient());
                 }
