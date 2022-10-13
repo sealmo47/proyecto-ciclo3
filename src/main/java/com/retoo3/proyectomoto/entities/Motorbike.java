@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -29,10 +30,15 @@ public class Motorbike implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique=true,nullable=false)
     private Integer idMotorbike;
+    @Column(length=45,unique=false,nullable=false)
     private String name;
+    @Column(length=45,unique=false,nullable=false)
     private String brand;
-    private Integer anio;
+    @Column(name="`year`",length=4,unique=false,nullable=false)
+    private Integer year;
+    @Column(length=250,unique=false,nullable=false)
     private String description;
     
     @ManyToOne
@@ -72,13 +78,14 @@ public class Motorbike implements Serializable {
         this.brand = brand;
     }
 
-    public Integer getAnio() {
-        return anio;
+    public Integer getYear() {
+        return year;
     }
 
-    public void setAnio(Integer anio) {
-        this.anio = anio;
+    public void setYear(Integer year) {
+        this.year = year;
     }
+
 
     public String getDescription() {
         return description;
