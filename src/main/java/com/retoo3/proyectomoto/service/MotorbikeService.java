@@ -50,15 +50,7 @@ public class MotorbikeService {
                 if(p.getDescription()!=null){
                     q.get().setDescription(p.getDescription());
                 }
-                if(p.getCategory()!=null){
-                    q.get().setCategory(p.getCategory());
-                }
-                if(p.getMessages()!=null){
-                    q.get().setMessages(p.getMessages());
-                }
-                if(p.getReservations()!=null){
-                    q.get().setReservations(p.getReservations());
-                }
+             
                 motorbikeRepository.save(q.get());
                 return q.get();
             }else{
