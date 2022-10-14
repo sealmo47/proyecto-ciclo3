@@ -28,4 +28,11 @@ public class ReservationController {
     public Reservation save(@RequestBody  Reservation r){
         return reservationService.save(r);
     }
+     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public boolean delete(@PathVariable int id){
+        return reservationService.delete(id);
+    }
+    
+
 }
