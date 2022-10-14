@@ -7,6 +7,7 @@ package com.retoo3.proyectomoto.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,7 +25,9 @@ import javax.persistence.Table;
 public class Message implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique=true,nullable=false)
     private Integer idMessage;
+    @Column(length=250,unique=false,nullable=false)
     private String messageText;
    
     
